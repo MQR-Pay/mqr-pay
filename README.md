@@ -16,7 +16,8 @@
 
 Experience **MQR Pay** in action! Check out the demos below:
 
-**Live Demo**: [🔗 Click here for the live demo](#)  
+**Live Video Demo**: [🔗 https://mqr.emmanuelhaggai.com/](https://mqr.emmanuelhaggai.com/)  
+**Live Link**: [🔗 https://mqr.emmanuelhaggai.com/](https://mqr.emmanuelhaggai.com/)  
 
 ---
 
