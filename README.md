@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Instant ETH Top-Ups**: Buy base ETH directly from your M-Pesa account and top up your smart wallet in seconds.
 - **AI Integration via WhatsApp**: Connect your smart wallet to our AI for instant access to account details and transactions.
