@@ -16,7 +16,9 @@
 
 Experience **MQR Pay** in action! Check out the demos below:
 
-**Live Video Demo**: [🔗 https://mqr.emmanuelhaggai.com/](https://mqr.emmanuelhaggai.com/)  
+**Live Video Demo**: 🔗 [https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9](https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9)
+
+
 **Live Link**: [🔗 https://mqr.emmanuelhaggai.com/](https://mqr.emmanuelhaggai.com/)  
 
 ---
@@ -27,5 +29,10 @@ Simply open the app, enter your M-Pesa phone number, and choose the amount of ET
 
 **Connect to AI via WhatsApp**:
 After linking your smart wallet with your WhatsApp account, interact with the AI via WhatsApp for instant access to your wallet details and transaction management.
+
+## Smart Contract Address
+This project utilizes a smart contract deployed on the Base blockchain. Below is the smart contract address for interacting with the system:
+
+Base Mainnet Contract Address for MQR Pay: 0xb514877558A26c836efA7a91BC04d965a8c1217e
 
 MQR Pay – Seamless blockchain transactiond.
