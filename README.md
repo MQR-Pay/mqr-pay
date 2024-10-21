@@ -30,6 +30,9 @@ Simply open the app, enter your M-Pesa phone number, and choose the amount of ET
 **Connect to AI via WhatsApp**:
 After linking your smart wallet with your WhatsApp account, interact with the AI via WhatsApp for instant access to your wallet details and transaction management.
 
+## Some useful resources
+- [How to Get Your Own Cool Basename and Fund Your Base Wallet via M-Pesa - Using MQR Pay](https://www.youtube.com/watch?v=xG3vDwACD8w)
+
 ## Smart Contract Address
 This project utilizes a smart contract deployed on the Base blockchain. Below is the smart contract address for interacting with the system:
 
