@@ -32,10 +32,11 @@ After linking your smart wallet with your WhatsApp account, interact with the AI
 
 ## Some useful resources
 - [How to Get Your Own Cool Basename and Fund Your Base Wallet via M-Pesa - Using MQR Pay](https://www.youtube.com/watch?v=xG3vDwACD8w)
+- [Connect Your Base Smart Wallet to WhatsApp for Instant Transaction Alerts! 📲💸 - Using MQR Pay](https://www.youtube.com/watch?v=1aaqe9EW828)
 
 ## Smart Contract Address
 This project utilizes a smart contract deployed on the Base blockchain. Below is the smart contract address for interacting with the system:
 
 Base Mainnet Contract Address for MQR Pay: 0xb514877558A26c836efA7a91BC04d965a8c1217e
 
-MQR Pay – Seamless blockchain transactiond.
+MQR Pay – Seamless blockchain transactions.
