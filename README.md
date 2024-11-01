@@ -19,7 +19,7 @@ Experience **MQR Pay** in action! Check out the demos below:
 **Live Video Demo**: 🔗 [https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9](https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9)
 
 
-**Live Link**: [🔗 https://mqr.emmanuelhaggai.com/](https://mqr.emmanuelhaggai.com/)  
+**Live Link**: [🔗 https://mqr.co.ke/](https://mqr.co.ke/)  
 
 ---
 
