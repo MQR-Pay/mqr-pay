@@ -16,7 +16,10 @@
 
 Experience **MQR Pay** in action! Check out the demos below:
 
-**Live Video Demo**: 🔗 [https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9](https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9)
+**Live Video Demo**: 
+- 🔗 [https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9](https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9)
+- [How to Get Your Own Cool Basename and Fund Your Base Wallet via M-Pesa - Using MQR Pay](https://www.youtube.com/watch?v=xG3vDwACD8w)
+- [Connect Your Base Smart Wallet to WhatsApp for Instant Transaction Alerts! 📲💸 - Using MQR Pay](https://www.youtube.com/watch?v=1aaqe9EW828)
 
 
 **Live Link**: [🔗 https://mqr.co.ke/](https://mqr.co.ke/)  
