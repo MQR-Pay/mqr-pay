@@ -20,6 +20,7 @@ Experience **MQR Pay** in action! Check out the demos below:
 - 🔗 [https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9](https://www.loom.com/share/7a8edebddc474cb69e7988a5b36359dd?sid=21f0f620-c63a-4f95-adf8-b4cdff4f6ad9)
 - [How to Get Your Own Cool Basename and Fund Your Base Wallet via M-Pesa - Using MQR Pay](https://www.youtube.com/watch?v=xG3vDwACD8w)
 - [Connect Your Base Smart Wallet to WhatsApp for Instant Transaction Alerts! 📲💸 - Using MQR Pay](https://www.youtube.com/watch?v=1aaqe9EW828)
+- [Effortlessly Transfer Funds from Your Smart Wallet to Any Base Account via QR Codes - Using MQR Pay!](https://www.youtube.com/watch?v=Q2fd4h7Wc9g)
 
 
 **Live Link**: [🔗 https://mqr.co.ke/](https://mqr.co.ke/)  
