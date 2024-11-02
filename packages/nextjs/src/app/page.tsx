@@ -21,6 +21,8 @@ import QRScanModal from 'src/components/QRScanModal';
 
 import MqrSteps from 'src/components/MqrSteps';
 
+import SendQRModal from 'src/components/SendQRModal';
+
 
 export default function Page() {
   const { address } = useAccount();
@@ -34,6 +36,8 @@ export default function Page() {
       <QRModal />
 
       <QRScanModal /> 
+
+      <SendQRModal /> 
 
       <Footer />
       

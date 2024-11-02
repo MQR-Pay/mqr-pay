@@ -57,6 +57,52 @@ const WalletDropdownLink2: React.FC<WalletDropdownLinkProps> = ({ icon }) => {
   );
 };
 
+const WalletDropdownLink_QR_send: React.FC<WalletDropdownLinkProps> = ({ icon }) => {
+  return (
+    <>
+      <button
+        type="button"
+        className="cursor-pointer bg-ock-default active:bg-ock-default-active hover:bg-[var(--bg-ock-default-hover)] relative flex items-center px-4 py-3 w-full"
+        data-toggle="modal"
+        data-target="#SendQRModal"
+      >
+        <span className="">
+          <div className="-translate-y-1/2 absolute top-1/2 left-4 flex h-[1.125rem] w-[1.125rem] items-center justify-center">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="18.000000pt" height="18.000000pt" viewBox="0 0 18.000000 18.000000"
+          preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,18.000000) scale(0.100000,-0.100000)"
+          fill="#000000" stroke="none">
+          <path d="M14 155 c-3 -8 -4 -20 -1 -27 3 -7 6 -3 6 9 1 14 9 23 24 26 l22 4
+          -23 2 c-12 0 -25 -6 -28 -14z"/>
+          <path d="M137 164 c12 -3 24 -14 26 -25 4 -15 4 -14 3 3 -1 17 -8 23 -26 25
+          -21 1 -21 0 -3 -3z"/>
+          <path d="M75 140 c4 -14 1 -22 -12 -27 -18 -6 -33 -22 -33 -34 0 -4 11 -6 25
+          -6 14 0 25 5 25 13 0 11 5 11 26 2 l26 -12 -21 -14 c-27 -18 -27 -35 -1 -27
+          14 5 20 2 20 -10 0 -10 7 -15 17 -13 24 4 28 35 6 41 -17 4 -17 5 0 6 21 1 23
+          31 2 31 -8 0 -15 5 -15 10 0 6 -12 10 -27 10 -21 0 -24 3 -14 9 12 8 12 12 2
+          25 -19 22 -34 20 -26 -4z"/>
+          <path d="M30 140 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0
+          -10 -4 -10 -10z"/>
+          <path d="M130 140 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0
+          -10 -4 -10 -10z"/>
+          <path d="M14 35 c1 -13 8 -20 24 -21 17 -1 18 -1 3 3 -11 2 -22 12 -24 21 -3
+          12 -4 11 -3 -3z"/>
+          <path d="M30 40 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0 -10
+          -4 -10 -10z"/>
+          </g>
+          </svg>
+          </div>
+          <span className="font-sans text-ock-foreground text-base leading-normal pl-6">
+            Send via QR code
+          </span>
+        </span>
+      </button>
+      </>
+  );
+};
+
 
 const WalletDropdownLink_WhatsApp: React.FC<WalletDropdownLinkProps> = ({ icon }) => {
   return (
@@ -108,6 +154,7 @@ export default function WalletWrapper({
           <WalletDropdownBasename />
           <WalletDropdownLink2 icon="wallet"> </WalletDropdownLink2>
           <WalletDropdownLink_WhatsApp icon="wallet"> </WalletDropdownLink_WhatsApp>
+          <WalletDropdownLink_QR_send icon="wallet"> </WalletDropdownLink_QR_send>
           <WalletDropdownFundLink />
           <WalletDropdownDisconnect />
         </WalletDropdown>

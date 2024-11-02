@@ -124,7 +124,7 @@ const QRModal = () => {
                   type="number"
                   className="form-control"
                   id="amount"
-                  placeholder="Enter amount"
+                  placeholder="Enter amount (atleast Ksh 10)"
                   value={amount}
                   onChange={(e) => { setAmount(e.target.value); setCustomArg(`${phoneNumber}-${address}-${e.target.value}`); }}
                   required

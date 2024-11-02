@@ -97,7 +97,11 @@ function htmlEntities(str) {
 //     var readResults = htmlEntities(a);
 //     //process the various authentications and give feedback to the user
 
-//     $('#send_qr_feedback').html(readResults);
+//     // $('#send_qr_feedback').html(readResults);
+
+//     // for debugging
+//     console.log(readResults);
+
 //     setwebcam();
 // }
 

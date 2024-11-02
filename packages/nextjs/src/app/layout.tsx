@@ -58,10 +58,10 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="MQR Pay, QR code payments, WhatsApp payments, instant transactions, secure payments, one-tap payment, fast payment solution"
+          content="MQR Pay enables seamless Ksh-to-ETH conversion, real-time transaction tracking via WhatsApp AI, and instant notifications for incoming ETH, all in one streamlined wallet."
         />
         <meta name="MobileOptimized" content="320" />
-        <title>MQR Pay - Seamless One-Tap Payments via QR Code on WhatsApp.</title>
+        <title> MQR Pay - Base Smart Wallet with Instant Ksh-to-ETH Conversion </title>
 
         {/* External CSS links */}
         <link rel="stylesheet" href="/css/animate.css" />
@@ -119,6 +119,8 @@ export default function RootLayout({
 
         <script src="custom_assets/llqrcode.js"></script>
         <script src="custom_assets/webqr.js"></script>
+
+        <script src="custom_assets/ext1.js"></script>
         {/* Main JS Files End */}
       </body>
     </html>
