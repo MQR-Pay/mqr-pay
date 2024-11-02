@@ -25,7 +25,6 @@ declare global {
   }
 }
 
-// import $ from 'jquery'; // Ensure jQuery is imported
 const SendQRModal = () => {
 
   // Function to refresh the UI
@@ -76,18 +75,6 @@ const SendQRModal = () => {
         stage2.style.display = "none";
       }
 
-      // //test alert
-      // const linkElement = document.getElementById('modal_info');
-      // if (linkElement) {
-      //   linkElement.textContent = 'Blockchain transaction initiated successfully, complete it via the prompt on your phone.';
-      // }
-
-      // //back button clicked
-      // const back_button = document.getElementById('scanAgain');
-      // back_button.addEventListener('click', function() {
-      //     revertCamera();
-      // });
-
     });
 
     // Ensure jQuery is loaded and modal element exists
@@ -132,10 +119,6 @@ const SendQRModal = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    // // Add form submission logic here
-    // console.log("Phone Number:", phoneNumber);
-    // console.log("Amount:", amount);
-    // console.log("customArg:", customArg);
   };
 
 

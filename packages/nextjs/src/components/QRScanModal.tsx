@@ -17,8 +17,6 @@ declare global {
   }
 }
 
-
-// import $ from 'jquery'; // Ensure jQuery is imported
 const QRScanModal = () => {
 
   // Function to refresh the UI
@@ -45,12 +43,6 @@ const QRScanModal = () => {
           utilsScript: "intl_phone_number/js/utils.js",
         });
       }
-
-      // //test alert
-      // const linkElement = document.getElementById('modal_info');
-      // if (linkElement) {
-      //   linkElement.textContent = 'Blockchain transaction initiated successfully, complete it via the prompt on your phone.';
-      // }
 
     });
 
@@ -86,11 +78,6 @@ const QRScanModal = () => {
     e.preventDefault();
   
     setCustomArg(`${phoneNumber}-${address}-w`);
-
-    // // Add form submission logic here
-    // console.log("Phone Number:", phoneNumber);
-    // console.log("Amount:", amount);
-    // console.log("customArg:", customArg);
   };
 
 

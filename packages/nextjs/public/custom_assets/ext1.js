@@ -1,19 +1,3 @@
-$(document).ready(function() {
-    // console.log("Opening camera");
-    // startCamera();
-
-
-    // $('#myModal').on('hidden.bs.modal', function () {
-    //     console.log('/clossing the camera.');
-    //     closeCamera();
-    // });
-
-    
-
-});
-
-
-
 //check if string is empty --- ON TOP
 function isEmpty(str) {
     str = str.trim();
