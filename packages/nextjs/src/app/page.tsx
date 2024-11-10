@@ -17,11 +17,13 @@ import Footer from 'src/components/Footer';
 
 import QRModal from 'src/components/QRModal';
 
-import QRScanModal from 'src/components/QRScanModal';
+import WhatsaAppModal from 'src/components/WhatsaAppModal';
 
 import MqrSteps from 'src/components/MqrSteps';
 
 import SendQRModal from 'src/components/SendQRModal';
+
+import SwapModal from 'src/components/SwapModal';
 
 
 export default function Page() {
@@ -35,9 +37,11 @@ export default function Page() {
 
       <QRModal />
 
-      <QRScanModal /> 
+      <WhatsaAppModal /> 
 
       <SendQRModal /> 
+
+      <SwapModal /> 
 
       <Footer />
       

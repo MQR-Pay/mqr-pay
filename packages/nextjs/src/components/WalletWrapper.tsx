@@ -128,6 +128,48 @@ const WalletDropdownLink_WhatsApp: React.FC<WalletDropdownLinkProps> = ({ icon }
   );
 };
 
+
+const WalletDropdownLink_Swap: React.FC<WalletDropdownLinkProps> = ({ icon }) => {
+  return (
+    <>
+      <button
+        type="button"
+        className="cursor-pointer bg-ock-default active:bg-ock-default-active hover:bg-[var(--bg-ock-default-hover)] relative flex items-center px-4 py-3 w-full"
+        data-toggle="modal"
+        data-target="#swapModal"
+      >
+        <span className="">
+          <div className="-translate-y-1/2 absolute top-1/2 left-4 flex h-[1.125rem] w-[1.125rem] items-center justify-center">
+          
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="48.000000pt" height="48.000000pt" viewBox="0 0 48.000000 48.000000"
+          preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)"
+          fill="#000000" stroke="none">
+          <path d="M78 430 c-4 -8 -9 -32 -13 -52 l-6 -38 51 0 c55 0 69 17 18 22 l-33
+          3 35 23 c66 42 139 41 204 -3 19 -13 38 -20 41 -15 7 12 -41 44 -89 60 -47 15
+          -104 9 -156 -19 l-39 -20 -3 27 c-3 18 -6 22 -10 12z"/>
+          <path d="M380 298 c-24 -40 -27 -74 -3 -40 22 32 33 27 33 -15 -1 -74 -56
+          -154 -117 -169 -12 -4 -23 -11 -23 -16 0 -16 51 1 86 27 43 33 68 89 69 152 0
+          51 7 65 20 43 3 -5 14 -10 23 -10 12 0 7 9 -18 30 -19 16 -38 30 -43 30 -4 0
+          -16 -15 -27 -32z"/>
+          <path d="M36 284 c-27 -71 28 -187 104 -220 l41 -18 -28 -15 c-15 -8 -23 -16
+          -17 -18 11 -4 84 24 84 32 0 18 -36 75 -48 75 -12 0 -11 -4 2 -25 22 -33 2
+          -34 -45 -2 -49 32 -81 100 -76 160 4 46 -5 63 -17 31z"/>
+          </g>
+          </svg>
+          
+          </div>
+          <span className="font-sans text-ock-foreground text-base leading-normal pl-6">
+          Token Swap
+          </span>
+        </span>
+      </button>
+      </>
+  );
+};
+
 export default function WalletWrapper({
   className,
   text,
@@ -155,6 +197,7 @@ export default function WalletWrapper({
           <WalletDropdownLink2 icon="wallet"> </WalletDropdownLink2>
           <WalletDropdownLink_WhatsApp icon="wallet"> </WalletDropdownLink_WhatsApp>
           <WalletDropdownLink_QR_send icon="wallet"> </WalletDropdownLink_QR_send>
+          <WalletDropdownLink_Swap icon="wallet"> </WalletDropdownLink_Swap>
           <WalletDropdownFundLink />
           <WalletDropdownDisconnect />
         </WalletDropdown>

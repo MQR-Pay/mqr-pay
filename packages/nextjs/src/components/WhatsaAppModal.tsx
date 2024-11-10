@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import TransactionWrapper from 'src/components/TransactionWrapper';
 import WalletWrapper from 'src/components/WalletWrapper';
@@ -8,15 +8,23 @@ import { useAccount } from 'wagmi';
 
 import { BASE_CHAIN_ID, ABI, ContractAddress } from "../constants";
 
+
+import TransactionWrapperWhatsApp from "src/components/TransactionWrapperWhatsApp";
+
 declare global {
   interface Window {
     intlTelInput: (input: HTMLInputElement, options: any) => any;
   }
 }
 
+const WhatsaAppModal = () => {
 
-// import $ from 'jquery'; // Ensure jQuery is imported
-const QRModal = () => {
+  const [customArg, setCustomArg] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [FinalphoneNumber, setFinalPhoneNumber] = useState("");
+  const [amount, setAmount] = useState("");
+
+  const SendData = useRef("");
 
   // Function to refresh the UI
   const refreshPage = () => {
@@ -24,18 +32,16 @@ const QRModal = () => {
   };
 
   useEffect(() => {
-    $('#myModal').on('shown.bs.modal', function () {
+    $('#myQRModal').on('shown.bs.modal', function () {
       console.log("Modal open");
 
       // initialize phone number
-      // var input = document.querySelector("#phone_number");
-
-      var input = document.querySelector("#phone_number") as HTMLInputElement | null;
+      var input = document.querySelector("#phone_number_2") as HTMLInputElement | null;
 
       if (input) {
         var iti = window.intlTelInput(input, {
           formatOnDisplay: true,
-          hiddenInput: "phone_number",
+          hiddenInput: "whatsapp_phone_number",
           initialCountry: "ke",
           placeholderNumberType: "MOBILE",
           // preferredCountries: ['ke', 'us', 'gb'],
@@ -44,48 +50,40 @@ const QRModal = () => {
         });
       }
 
-      // //test alert
-      // const linkElement = document.getElementById('modal_info');
-      // if (linkElement) {
-      //   linkElement.textContent = 'Blockchain transaction initiated successfully, complete it via the prompt on your phone.';
-      // }
+      // Set an ID for the hidden input after initialization
+      const hiddenInput = document.querySelector("input[name='whatsapp_phone_number']");
+      if (hiddenInput) {
+        hiddenInput.id = "whatsapp_phone_number_id"; // Set your desired ID
+      }
 
     });
 
     // Ensure jQuery is loaded and modal element exists
-    $('#myModal').on('hidden.bs.modal', function () {
+    $('#myQRModal').on('hidden.bs.modal', function () {
       refreshPage(); // Call the refresh function when the modal closes
     });
 
     // Cleanup function to avoid memory leaks
     return () => {
-      $('#myModal').off('shown.bs.modal');
+      $('#myQRModal').off('shown.bs.modal');
     };
   }, []);
 
 
   const { address } = useAccount();
 
-  const [customArg, setCustomArg] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [amount, setAmount] = useState("");
-
   // Update customArg whenever phoneNumber or amount changes
   useEffect(() => {
-    setCustomArg(`${phoneNumber}-${address}-${amount}`);
-
-    console.log("Phone Number:", phoneNumber);
-    console.log("Amount:", amount);
-    console.log("customArg:", customArg);
-
-  }, [phoneNumber, amount]);
+      // update the UI
+      console.log("customArg: ", SendData.current);
+  }, [phoneNumber]);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
   
-    setCustomArg(`${phoneNumber}-${address}-${amount}`);
+    // setCustomArg(`${FinalphoneNumber}-${address}-w`);
 
-    // // Add form submission logic here
+    // // Add form submission logic heres
     // console.log("Phone Number:", phoneNumber);
     // console.log("Amount:", amount);
     // console.log("customArg:", customArg);
@@ -93,49 +91,35 @@ const QRModal = () => {
 
 
   return (
-    <div className="modal fade" tabIndex={-1} id="myModal" role="dialog">
+    <div className="modal fade" tabIndex={-1} id="myQRModal" role="dialog">
       <div className="modal-dialog modal-lg" role="document">
         <div className="modal-content">
           <div className="modal-header">
             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 className="modal-title">Top up via M-Pesa</h4>
+            <h4 className="modal-title">Link Your Smart Wallet with WhatsApp</h4>
           </div>
           <div className="modal-body">
-            <p id="modal_info">Please enter your mpesa phone number and the amount of ksh to top up with.</p>
+            <p id="mqr_modal_info">Enter your WhatsApp phone number to securely link it to your smart wallet. </p>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="whatsapp_phone_form">
               <div className="form-group">
-                <label htmlFor="phone">Phone Number: E.g 0712345678</label>
+                <label htmlFor="phone">Phone Number: <span id="phone_preview">E.g 0712345678</span></label>
                 <input
                   type="tel"
                   className="form-control"
-                  id="phone_number"
+                  id="phone_number_2"
                   placeholder="Enter phone number"
                   value={phoneNumber}
-                  onChange={(e) => { setPhoneNumber(e.target.value); setCustomArg(`${e.target.value}-${address}-${amount}`); }}
+                  onChange={(e) => { setPhoneNumber(e.target.value); SendData.current = `${e.target.value}-${address}-w` }}
                   required
                 />
               </div>
-
-              <div className="form-group">
-                <label htmlFor="amount">Amount: </label>
-                <input
-                  type="number"
-                  className="form-control"
-                  id="amount"
-                  placeholder="Enter amount (atleast Ksh 10)"
-                  value={amount}
-                  onChange={(e) => { setAmount(e.target.value); setCustomArg(`${phoneNumber}-${address}-${e.target.value}`); }}
-                  required
-                />
-              </div>
-
 
               <div>
                 {address ? (
-                  <TransactionWrapper address={address} customArg={customArg} />
+                  <TransactionWrapperWhatsApp address={address} customArg={SendData.current} />
                 ) : (
                   <WalletWrapper
                     className="max-w-full"
@@ -158,4 +142,4 @@ const QRModal = () => {
   );
 };
 
-export default QRModal;
+export default WhatsaAppModal;
