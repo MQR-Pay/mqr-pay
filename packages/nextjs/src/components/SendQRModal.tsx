@@ -207,6 +207,10 @@ const SendQRModal = () => {
                 <div>
                   <input type="hidden" id="qr_address" name="qr_address" />
                 </div>
+
+                <div className="form-group">
+                  <label>Address: <strong id="qr_address_disp"> - </strong></label>
+                </div>
           
                 <div className="form-group">
                   <label htmlFor="amount">Amount: (ETH)</label>
